@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "creation_date": "2025-12-16T20:28:19.254116",
+    "n_proteins": 830,
+    "script_version": "1.1.0"
+  },
+  "spectral_properties": {
+    "excitation": {
+      "min": 343.0,
+      "max": 702.0,
+      "mean": 506.9963855421687,
+      "median": 500.0,
+      "std": 65.49935302175548
+    },
+    "emission": {
+      "min": 414.0,
+      "max": 720.0,
+      "mean": 541.7,
+      "median": 515.0,
+      "std": 60.93582912713455
+    },
+    "stokes_shift": {
+      "min": 6.0,
+      "max": 180.0,
+      "mean": 34.70361445783133,
+      "median": 25.0
+    }
+  },
+  "quantum_yield": {
+    "n_documented": 682,
+    "percentage": 82.16867469879519,
+    "mean": 0.47948797653958947,
+    "median": 0.5
+  },
+  "extinction_coefficient": {
+    "n_documented": 597,
+    "percentage": 71.92771084337349
+  },
+  "structural_data": {
+    "n_with_pdb": 155,
+    "n_with_uniprot": 145,
+    "percentage_pdb": 18.67469879518072,
+    "percentage_uniprot": 17.46987951807229
+  },
+  "sequence": {
+    "mean_length": 237.0,
+    "min_length": 106,
+    "max_length": 486
+  },
+  "color_distribution": {
+    "Cyan": 409,
+    "Yellow/Orange": 112,
+    "Red": 98,
+    "Green": 84,
+    "Blue": 68,
+    "Far-Red/NIR": 59
+  },
+  "filter_stats": {
+    "initial_count": 1040,
+    "after_spectrum": 876,
+    "after_sequence": 833,
+    "after_cofactor": 833,
+    "after_spectral_range": 833,
+    "after_stokes": 830,
+    "final_count": 830
+  }
+}

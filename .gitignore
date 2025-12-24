@@ -1,3 +1,7 @@
+#curstom ignore for this python projects
+reports/
+data/logs/
+data/structures/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

@@ -1,0 +1,144 @@
+cff-version: 1.2.0
+
+title: "FP-Spectra: Predicting Fluorescent Protein Spectral Properties from AlphaFold2 Structures"
+
+message: "If you use this software, please cite it using the metadata from this file."
+
+type: software
+
+version: "1.0.0"
+
+date-released: "2025-12-24"
+
+license: CC-BY-4.0
+
+repository-code: "https://github.com/yannbanas/fp-spectra"
+
+url: "https://github.com/yannbanas/fp-spectra"
+
+doi: "10.5281/zenodo.18048544"
+identifiers:
+   - type: doi
+     value: "10.5281/zenodo.18048544"
+     description: "Zenodo archive DOI"
+
+authors:
+  - family-names: "Banas"
+    given-names: "Yann"
+    orcid: "https://orcid.org/0009-0000-3445-5239"
+    email: "yann.banas@banastechnologie.cloud"
+    affiliation: "NPHP (Neuro-Photonic Hybrid Processor) - Independent Researcher"
+
+keywords:
+  - fluorescent proteins
+  - spectral prediction
+  - AlphaFold2
+  - machine learning
+  - chromophore
+  - protein structure
+  - ESM-2
+  - SHAP
+  - bioinformatics
+  - computational biology
+  - GFP
+  - emission wavelength
+  - excitation wavelength
+
+abstract: >-
+  FP-Spectra is a machine learning pipeline for predicting excitation and 
+  emission wavelengths of fluorescent proteins from AlphaFold2-predicted 
+  structures. Using a dataset of 517 fluorescent proteins from FPbase with 
+  ColabFold-generated structures, the pipeline extracts 113 features including 
+  chromophore geometry, local environment descriptors, and local ESM-2 
+  embeddings (±15 residues around the chromophore). An Extra Trees model 
+  achieves 17.13 nm MAE for emission wavelength prediction (R² = 0.737). 
+  SHAP analysis reveals that the ψ dihedral angle of the chromophore tyrosine 
+  is the most predictive feature, confirming that local chromophore geometry 
+  determines spectral properties. This work demonstrates that AlphaFold2-predicted 
+  structures contain sufficient information for fluorescent protein spectral 
+  prediction, enabling rapid in silico screening of variants.
+
+references:
+  - type: article
+    authors:
+      - family-names: "Jumper"
+        given-names: "John"
+      - family-names: "Evans"
+        given-names: "Richard"
+      - family-names: "Pritzel"
+        given-names: "Alexander"
+    title: "Highly accurate protein structure prediction with AlphaFold"
+    journal: "Nature"
+    volume: 596
+    start: 583
+    end: 589
+    year: 2021
+    doi: "10.1038/s41586-021-03819-2"
+    
+  - type: article
+    authors:
+      - family-names: "Lambert"
+        given-names: "Talley J."
+    title: "FPbase: a community-editable fluorescent protein database"
+    journal: "Nature Methods"
+    volume: 16
+    start: 277
+    end: 278
+    year: 2019
+    doi: "10.1038/s41592-019-0352-8"
+    
+  - type: article
+    authors:
+      - family-names: "Lin"
+        given-names: "Zeming"
+      - family-names: "Akin"
+        given-names: "Halil"
+      - family-names: "Rao"
+        given-names: "Roshan"
+    title: "Evolutionary-scale prediction of atomic-level protein structure with a language model"
+    journal: "Science"
+    volume: 379
+    start: 1123
+    end: 1130
+    year: 2023
+    doi: "10.1126/science.ade2574"
+    
+  - type: article
+    authors:
+      - family-names: "Mirdita"
+        given-names: "Milot"
+      - family-names: "Schütze"
+        given-names: "Konstantin"
+      - family-names: "Moriwaki"
+        given-names: "Yoshitaka"
+    title: "ColabFold: making protein folding accessible to all"
+    journal: "Nature Methods"
+    volume: 19
+    start: 679
+    end: 682
+    year: 2022
+    doi: "10.1038/s41592-022-01488-1"
+
+  - type: conference-paper
+    authors:
+      - family-names: "Lundberg"
+        given-names: "Scott M."
+      - family-names: "Lee"
+        given-names: "Su-In"
+    title: "A unified approach to interpreting model predictions"
+    conference:
+      name: "Advances in Neural Information Processing Systems 30 (NeurIPS)"
+    year: 2017
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Banas"
+      given-names: "Yann"
+      orcid: "https://orcid.org/0009-0000-3445-5239"
+  title: "FP-Spectra: Predicting Fluorescent Protein Spectral Properties from AlphaFold2 Structures"
+  version: "1.0.0"
+  year: 2025
+  doi: "10.5281/zenodo.18048544"
+  url: "https://github.com/yannbanas/fp-spectra"
+  license: "CC-BY-4.0"
